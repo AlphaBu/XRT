@@ -47,15 +47,13 @@ Option                      Description
 
 Addition Syntax Information
 
-Syntax: <section>:<format>:<file>
+* Syntax: <section>:<format>:<file>
 
-    <section> - The section to add or dump (e.g., BUILD_METADATA, BITSTREAM, etc.)
-                Note: If a JSON format is being used, this value can be empty.  If so, then the JSON metadata will determine the section it is associated with. In addition, only sections that are found in the JSON file will be reported.
+  * <section> - The section to add or dump (e.g., BUILD_METADATA, BITSTREAM, etc.) Note: If a JSON format is being used, this value can be empty.  If so, then the JSON metadata will determine the section it is associated with. In addition, only sections that are found in the JSON file will be reported.
 
-    <format>  - The format to be used.  Currently, there are three formats available: RAW: Binary Image; JSON: JSON file format; and HTML: Browser visible.
-                Note: Only selected operations and sections supports these file types.
+  * <format>  - The format to be used.  Currently, there are three formats available: RAW: Binary Image; JSON: JSON file format; and HTML: Browser visible. Note: Only selected operations and sections supports these file types.
 
-    <file>    - The name of the input/output file to use.
+  * <file>    - The name of the input/output file to use.
 
   Used By: --add_section and --dump_section
 
