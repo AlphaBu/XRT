@@ -21,17 +21,15 @@ For example:
 
 Command Line Options
 
-=========== ========
-Country     Capital
-=========== ========
-France      Paris
-Japan       Tokyo
-=========== ========
+=========================== ===================================================================
+Option                      Description
+=========================== ===================================================================
+-h [ --help ]               Print help messages
+-i [ --input ] arg          Input file name. Reads xclbin into memory.4
+-o [ --output ] arg         Output file name. Writes in memory xclbin image to a file.
+=========================== ===================================================================
 
 
-+------------+------------+
-| Options   | Description  |
-+============+============+
 | -h [ --help ] | Print help messages   |
 +------------+------------+
 | -i [ --input ] arg | Input file name. Reads xclbin into memory.   |
