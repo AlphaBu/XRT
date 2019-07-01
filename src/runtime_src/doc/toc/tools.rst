@@ -14,10 +14,10 @@ xbutilutil
 This utility operates on a xclbin produced by xocc.
 
 For example:
-  1) Reporting xclbin information  : xclbinutil --info --input binary_container_1.xclbin
-  2) Extracting the bitstream image: xclbinutil --dump-section BITSTREAM:RAW:bitstream.bit --input binary_container_1.xclbin
-  3) Extracting the build metadata : xclbinutil --dump-section BUILD_METADATA:HTML:buildMetadata.json --input binary_container_1.xclbin
-  4) Removing a section            : xclbinutil --remove-section BITSTREAM --input binary_container_1.xclbin --output binary_container_modified.xclbin
+  1) Reporting xclbin information  : `xclbinutil --info --input binary_container_1.xclbin`
+  2) Extracting the bitstream image: `xclbinutil --dump-section BITSTREAM:RAW:bitstream.bit --input binary_container_1.xclbin`
+  3) Extracting the build metadata : `xclbinutil --dump-section BUILD_METADATA:HTML:buildMetadata.json --input binary_container_1.xclbin`
+  4) Removing a section            : `xclbinutil --remove-section BITSTREAM --input binary_container_1.xclbin --output binary_container_modified.xclbin`
 
 Command Line Options
 
@@ -58,3 +58,8 @@ Addition Syntax Information
   Used By: --add_section and --dump_section
 
   Example: xclbinutil --add-section BITSTREAM:RAW:mybitstream.bit
+
+
+For most users, the contents and how the xclbin was created is desired. This information can be obtained through the --info option and reports information on the xclbin, hardware platform, clocks, memory configuration, kernel, and how the xclbin was generated.
+
+`xclbinutil -i binary_container_1.xclbin --info`
