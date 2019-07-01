@@ -21,6 +21,14 @@ For example:
 
 Command Line Options
 
+=========== ========
+Country     Capital
+=========== ========
+France      Paris
+Japan       Tokyo
+=========== ========
+
+
 +------------+------------+
 | Options   | Description  |
 +============+============+
@@ -76,5 +84,5 @@ Syntax: <section>:<format>:<file>
     <file>    - The name of the input/output file to use.
 
   Used By: --add_section and --dump_section
-  
+
   Example: xclbinutil --add-section BITSTREAM:RAW:mybitstream.bit
