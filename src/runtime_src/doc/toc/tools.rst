@@ -91,8 +91,9 @@ aaa
 
 
 
-+---------------------------+-------------------------------------------------------------------------+
-| --info [=arg(=<console>)] |   Report accelerator binary content.  Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc. Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
+
+
+--info [=arg(=<console>)] |   Report accelerator binary content.  Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc. Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
 
 
