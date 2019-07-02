@@ -41,67 +41,12 @@ Option                      Description
 --remove-signature          Removes the signature from the xclbin image.
 --get-signature             Returns the user defined signature (if set) of the xclbin image.
 --info [=arg(=<console>)]   Report accelerator binary content.
-                            - Including: generation and packaging data, kernel signatures,
-                            connectivity, clocks, sections, etc.
-                            - Note: Optionally an output file can be specified.
-                            If none is specified, then the output will go to the console.
 --list-names                List all possible section names (Stand Alone Option)
 --version                   Version of this executable.
 --force                     Forces a file overwrite.
 =========================== ===================================================================
 
 
-
-
-aaa
-
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| Option                    | Description                                                                                                                             |
-+===========================+=========================================================================================================================================+
-| -h [ --help ]             | Print help messages                                                                                                                     |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| -i [ --input ] arg        | Input file name. Reads xclbin into memory.                                                                                              |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| -o [ --output ] arg       |    Output file name. Writes in memory xclbin image to a file.                                                                           |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| -v [ --verbose ]          |    Display verbose/debug information.                                                                                                   |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| -q [ --quiet ]            |    Minimize reporting information.                                                                                                      |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --migrate-forward         |    Migrate the xclbin archive forward to the new binary format.                                                                         |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --remove-section arg      |    Section name to remove.                                                                                                              |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --add-section arg         |    Section name to add.  Format: <section>:<format>:<file>                                                                              |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --dump-section arg        |    Section to dump. Format: <section>:<format>:<file>                                                                                   |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --replace-section arg     |    Section to replace.                                                                                                                  |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --key-value arg           |    Key value pairs.  Format: [USER|SYS]:<key>:<value>                                                                                   |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --remove-key arg          |    Removes the given user key from the xclbin archive.                                                                                  |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --add-signature arg       |    Adds a user defined signature to the given xclbin image.                                                                             |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --remove-signature        |    Removes the signature from the xclbin image.                                                                                         |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --get-signature           |    Returns the user defined signature (if set) of the xclbin image.                                                                     |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --info [=arg(=<console>)] |    Report accelerator binary content.                                                                                                   |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --list-names              |    List all possible section names (Stand Alone Option)                                                                                 |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --version                 |    Version of this executable.                                                                                                          |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --force                   |    Forces a file overwrite.                                                                                                             |
-+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-
-
-Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc.   Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
 
 
@@ -120,6 +65,8 @@ Addition Syntax Information
   Example: xclbinutil --add-section BITSTREAM:RAW:mybitstream.bit
 
 
-For most users, the contents and how the xclbin was created is desired. This information can be obtained through the --info option and reports information on the xclbin, hardware platform, clocks, memory configuration, kernel, and how the xclbin was generated.
+For most users, the contents and how the xclbin was created is desired. This information can be obtained through the **--info** option and reports information on the xclbin, hardware platform, clocks, memory configuration, kernel, and how the xclbin was generated.
+
+* Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
 **xclbinutil -i binary_container_1.xclbin --info**
