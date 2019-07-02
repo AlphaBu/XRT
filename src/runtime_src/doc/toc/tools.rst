@@ -46,8 +46,14 @@ Command Line Options
   --force                     Forces a file overwrite.
   =========================== ===================================================================
 
++------------+------------+
+| Header 1   | Header 2   |
++============+============+
+| -h [ --help ] | Print help messages   |
++------------+------------+
 
--h [ --help ]               Print help messages
+
+
 -i [ --input ] arg          Input file name. Reads xclbin into memory.
 -o [ --output ] arg         Output file name. Writes in memory xclbin image to a file.
 -v [ --verbose ]            Display verbose/debug information.
