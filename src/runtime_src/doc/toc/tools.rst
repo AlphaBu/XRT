@@ -8,7 +8,7 @@ Xilinx Board Utility Tool
 
 
 
-xbutilutil
+xclbinutil
 ~~~~~
 
 This utility operates on a xclbin produced by xocc.
@@ -21,29 +21,30 @@ For example:
 
 Command Line Options
 
-=========================== ===================================================================
-Option                      Description
-=========================== ===================================================================
--h [ --help ]               Print help messages
--i [ --input ] arg          Input file name. Reads xclbin into memory.
--o [ --output ] arg         Output file name. Writes in memory xclbin image to a file.
--v [ --verbose ]            Display verbose/debug information.
--q [ --quiet ]              Minimize reporting information.
---migrate-forward           Migrate the xclbin archive forward to the new binary format.
---remove-section arg        Section name to remove.
---add-section arg           Section name to add.  Format: <section>:<format>:<file>
---dump-section arg          Section to dump. Format: <section>:<format>:<file>
---replace-section arg       Section to replace.
---key-value arg             Key value pairs.  Format: [USER|SYS]:<key>:<value>
---remove-key arg            Removes the given user key from the xclbin archive.
---add-signature arg         Adds a user defined signature to the given xclbin image.
---remove-signature          Removes the signature from the xclbin image.
---get-signature             Returns the user defined signature (if set) of the xclbin image.
---info [=arg(=<console>)]   Report accelerator binary content.  Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc. Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
---list-names                List all possible section names (Stand Alone Option)
---version                   Version of this executable.
---force                     Forces a file overwrite.
-=========================== ===================================================================
+..
+  =========================== ===================================================================
+  Option                      Description
+  =========================== ===================================================================
+  -h [ --help ]               Print help messages
+  -i [ --input ] arg          Input file name. Reads xclbin into memory.
+  -o [ --output ] arg         Output file name. Writes in memory xclbin image to a file.
+  -v [ --verbose ]            Display verbose/debug information.
+  -q [ --quiet ]              Minimize reporting information.
+  --migrate-forward           Migrate the xclbin archive forward to the new binary format.
+  --remove-section arg        Section name to remove.
+  --add-section arg           Section name to add.  Format: <section>:<format>:<file>
+  --dump-section arg          Section to dump. Format: <section>:<format>:<file>
+  --replace-section arg       Section to replace.
+  --key-value arg             Key value pairs.  Format: [USER|SYS]:<key>:<value>
+  --remove-key arg            Removes the given user key from the xclbin archive.
+  --add-signature arg         Adds a user defined signature to the given xclbin image.
+  --remove-signature          Removes the signature from the xclbin image.
+  --get-signature             Returns the user defined signature (if set) of the xclbin image.
+  --info [=arg(=<console>)]   Report accelerator binary content.  Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc. Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
+  --list-names                List all possible section names (Stand Alone Option)
+  --version                   Version of this executable.
+  --force                     Forces a file overwrite.
+  =========================== ===================================================================
 
 Addition Syntax Information
 
