@@ -41,8 +41,8 @@ Option                      Description
 --remove-signature          Removes the signature from the xclbin image.
 --get-signature             Returns the user defined signature (if set) of the xclbin image.
 --info [=arg(=<console>)]   Report accelerator binary content.
-                            Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc.
-                            Note: Optionally an output file can be specified.If none is specified, then the output will go to the console.                          
+                              Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc.
+                              Note: Optionally an output file can be specified.If none is specified, then the output will go to the console.                          
 --list-names                List all possible section names (Stand Alone Option)
 --version                   Version of this executable.
 --force                     Forces a file overwrite.
