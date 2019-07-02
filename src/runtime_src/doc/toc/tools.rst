@@ -82,7 +82,7 @@ aaa
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | --get-signature           |    Returns the user defined signature (if set) of the xclbin image.                                                                     |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| --info [=arg(=<console>)] |    Report accelerator binary content. Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc. |
+| --info [=arg(=<console>)] |    Report accelerator binary content.                                                                                                   |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | --list-names              |    List all possible section names (Stand Alone Option)                                                                                 |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -95,7 +95,7 @@ aaa
 
 
 
-  Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
+Including: generation and packaging data, kernel signatures, connectivity, clocks, sections, etc.   Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
 
 
