@@ -47,9 +47,6 @@ Option                      Description
 =========================== ===================================================================
 
 
-
-
-
 Addition Syntax Information
 
 * Syntax: <section>:<format>:<file>
@@ -63,7 +60,6 @@ Addition Syntax Information
   Used By: --add_section and --dump_section
 
   Example: xclbinutil --add-section BITSTREAM:RAW:mybitstream.bit
-
 
 For most users, the contents and how the xclbin was created is desired. This information can be obtained through the **--info** option and reports information on the xclbin, hardware platform, clocks, memory configuration, kernel, and how the xclbin was generated.
 
