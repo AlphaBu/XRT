@@ -23,21 +23,20 @@ Usecases
 Get info from xclbin file
 .........................
 
-Various information can be obtained through the **--info** option, including information on the date, hardware platform, clocks, memory configuration, kernel, and how the xclbin was generated.
+Various information can be obtained through the --info option, including information on the creation date, hardware platform, clocks, memory configuration, kernel, tool generation options, and etc.
 
 * Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
-**xclbinutil -i binary_container_1.xclbin --info=<FILE_NAME>**
+`xclbinutil -i binary_container_1.xclbin --info=<FILE_NAME>`
 
 
 Xclbin metadata controlling
 ...........................
 
 For example:
-  1) Reporting xclbin information  : **xclbinutil --info --input binary_container_1.xclbin**
-  2) Extracting the bitstream image: **xclbinutil --dump-section BITSTREAM:RAW:bitstream.bit --input binary_container_1.xclbin**
-  3) Extracting the build metadata : **xclbinutil --dump-section BUILD_METADATA:HTML:buildMetadata.json --input binary_container_1.xclbin**
-  4) Removing a section            : **xclbinutil --remove-section BITSTREAM --input binary_container_1.xclbin --output binary_container_modified.xclbin**
+  1) Extracting the bitstream image: **xclbinutil --dump-section BITSTREAM:RAW:bitstream.bit --input binary_container_1.xclbin**
+  2) Extracting the build metadata : **xclbinutil --dump-section BUILD_METADATA:HTML:buildMetadata.json --input binary_container_1.xclbin**
+  3) Removing a section            : **xclbinutil --remove-section BITSTREAM --input binary_container_1.xclbin --output binary_container_modified.xclbin**
 
 
 Digital signature of xclbin to secure download
@@ -54,10 +53,11 @@ Xclbinutil allow user to add or get signature from xclbin file, or remove signat
 **xclbinutil --remove-signature -i output.xclbin -o output_nosign.xclbin**
 
 
-Upgrade xclbin file from older version
+Migrate xclbin file forward from older version
 ......................................
 
-To be compatible with new xclbin.h.
+Migrating an older xclbin binary format (via the mirror JSON data) forward to the current binary format (compatible with new xclbin.h).
+
 
 **xclbinutil --migrate-forward -i binary_container_1.xclbin -o output.xclbin**
 
