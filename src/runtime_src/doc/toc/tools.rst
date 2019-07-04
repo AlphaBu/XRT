@@ -27,7 +27,7 @@ Various information can be obtained through the --info option, including informa
 
 * Note: Optionally an output file can be specified.  If none is specified, then the output will go to the console.
 
-`xclbinutil -i binary_container_1.xclbin --info=<FILE_NAME>`
+**xclbinutil -i binary_container_1.xclbin --info=<FILE_NAME>**
 
 
 Xclbin metadata controlling
