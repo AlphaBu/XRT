@@ -6,6 +6,7 @@ xbutil
 
 Xilinx Board Utility Tool
 
+Refer to UG1279 <https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1279-sdx-command-utility-reference-guide.pdf>
 
 
 xclbinutil
