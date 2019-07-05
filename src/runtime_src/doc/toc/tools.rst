@@ -42,7 +42,12 @@ For example:
 Digital signature of xclbin to secure download
 ..............................................
 
-Xclbinutil allow user to add or get signature from xclbin file, or remove signature from xclbin file. The secure download of xclbin is controlled by XRT management driver.
+Xclbinutil allow user to add or get signature from xclbin file, or remove signature from xclbin file.
+
+.. image:: digital_sign.jpg
+   :align: center
+
+The secure download of xclbin is controlled by XRT management driver.
 
 [Internal note: Refer http://jira.xilinx.com/browse/PR-13557]
 
